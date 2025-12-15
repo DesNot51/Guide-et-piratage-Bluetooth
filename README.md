@@ -12,7 +12,21 @@ Cet outil fonctionne grâce à un simple script Python exécutable sous linux et
 
 Lien Github BlueDucky : https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/pentestfunctions/BlueDucky&ved=2ahUKEwj_-fOkycCRAxW_RKQEHY7RMXAQFnoECCAQAQ&usg=AOvVaw0ofba09WYb8Ah1-BWZAqog
 
-## Note : Des mises à jours sont à effectuer sur le code Python en remplaçant certains caractères par d'autres notamment des suppressions de guillemets et un sleep time dans les fonctions mains.
+Note : Des mises à jours seront à effectuer sur le code Python en remplaçant certains caractères par d'autres notamment des suppressions de guillemets et un sleep time dans les fonctions mains.
 
+## 2. Bluebugger
 
+Bluebugger est un outil open-source de pentesting Bluetooth, similaire à BlueDucky mais axé sur l'exploitation de vulnérabilités plus anciennes comme le bluebugging.
 
+Celui-ci demande d'être déjà appairé avec l'appareil (peut être possible en utilisant l'outil précédent)
+Cet outil va permettre d'afficher directement les contacts de l'appareil ciblé contenant les noms et les numéros de téléphones. 
+Il va également permettre d'afficher les informations sur l'appareil ciblé.
+
+Lien Github Bluebugger : https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/webdragon63/Bluebugger&ved=2ahUKEwi99LnSy8CRAxUkK_sDHSrsG1IQFnoECA0QAQ&usg=AOvVaw12qGAG9L2QzrwEg0vpzhbf
+
+## 3. Outil 3
+
+Celui-ci demande aussi d'être déjà appairé avec l'appareil (peut être possible en utilisant l'outil précédent)
+Cet outil va permettre d'envoyer directement des messages à la place de la cible à n'importe quel numéro directement sur le téléphone de la cible. Le message est de plus éditable.
+
+Lien Github Outil 3 : 
