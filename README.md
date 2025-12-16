@@ -16,6 +16,7 @@ Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à 
 **Vous devez activer le bluetooth sur votre ordinateur pour commencer et activer l'appairage sur le téléphone pour le repérer**
 
 Pour scanner le Bluetooth saisir dans un terminal :
+
 `hcitool scan`
 
 Cette commande va permettre de repérer tous les appareils bluetooth à proximité.
@@ -27,9 +28,11 @@ Pour ouvrir Bluetoothctl saisissez la commande suivante dans le terminal :
 `bluetoothctl`
 
 Pour activer l'agent bluetooth saisissez la commande : 
+
 `agent-on`
 
 Puis : 
+
 `default-agent`
 
 Pour passer en mode découvrable : 
