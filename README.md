@@ -11,10 +11,34 @@ Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à 
   - `hcitool` pour scanner les appareils Bluetooth.
   - `obexftp` pour envoyer et recevoir des fichiers via Bluetooth.
 
-Installez les outils nécessaires avec la commande suivante :
+## 1. Outil hcitool
 
-```bash
-sudo apt-get install bluez bluez-tools obexftp
+**Vous devez activer le bluetooth sur votre ordinateur pour commencer et activer l'appairage sur le téléphone pour le repérer**
+
+Pour scanner le Bluetooth saisir dans un terminal : `hcitool scan`
+Cette commande va permettre de repérer tous les appareils bluetooth à proximité.
+
+## 2. Outil bluetoothctl 
+### Commandes de bases
+
+Pour ouvrir Bluetoothctl saisissez la commande suivante dans le terminal : `bluetoothctl`
+
+Pour activer l'agent bluetooth saisissez la commande : `agent-on`
+
+Puis : `default-agent`
+
+Pour passer en mode découvrable : `discoverable on`
+
+Pour autoriser l'appreillement : `pairable on`
+
+Pour lancer un scan : `scan on`
+
+### Appareillement téléphone portable
+
+Pour s'appareiller avec un téléphone portable mettre le téléphone en mode pairable et une fois celui-ci détecté : `pair XX.XX.XX.XX.XX.XX`
+Puis confirmer le passkey entre les 2 appareils pour la connexion.
+
+
 
 
 # Guide-piratage-Bluetooth
