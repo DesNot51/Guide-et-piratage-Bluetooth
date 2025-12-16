@@ -15,7 +15,7 @@ Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à 
 
 **Vous devez activer le bluetooth sur votre ordinateur pour commencer et activer l'appairage sur le téléphone pour le repérer**
 
-Pour scanner le Bluetooth saisir dans un terminal : 
+Pour scanner le Bluetooth saisir dans un terminal :
 `hcitool scan`
 
 Cette commande va permettre de repérer tous les appareils bluetooth à proximité.
@@ -53,7 +53,10 @@ Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : 
 Pour envoyer un fichier, utiliser la commande obexftp : 
 `obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 12 --put <chemin_du_fichier>`
 
+### Envoyer un fichier sur un ordinateur
 
+Pour envoyer un fichier sur un ordinateur, utiliser la même commande mais en changeant le channel : 
+`obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 9 --put <chemin_du_fichier>`
 
 # Guide-piratage-Bluetooth
 
