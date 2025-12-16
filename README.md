@@ -18,6 +18,7 @@ Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à 
 Pour scanner le Bluetooth saisir dans un terminal :
 
 `hcitool scan`
+[INSERER CAPTURE]
 
 Cette commande va permettre de repérer tous les appareils bluetooth à proximité.
 
