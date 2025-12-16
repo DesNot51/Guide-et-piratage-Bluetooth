@@ -36,31 +36,41 @@ Puis :
 `default-agent`
 
 Pour passer en mode découvrable : 
+
 `discoverable on`
 
 Pour autoriser l'appreillement : 
+
 `pairable on`
 
 Pour lancer un scan : 
+
 `scan on`
 
 ### Appareillement téléphone portable
 
-Pour s'appareiller avec un téléphone portable mettre le téléphone en mode pairable et une fois celui-ci détecté : `pair XX.XX.XX.XX.XX.XX`
+Pour s'appareiller avec un téléphone portable mettre le téléphone en mode pairable et une fois celui-ci détecté : 
+
+`pair XX.XX.XX.XX.XX.XX`
+
 Puis confirmer le passkey entre les 2 appareils pour la connexion.
 
-Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : `connect XX.XX.XX.XX.XX.XX`
+Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : 
+
+`connect XX.XX.XX.XX.XX.XX`
 
 ### Envoyer un fichier sur le téléphone portable
 
 Pour envoyer un fichier sur un téléphone portable, utiliser la commande obexftp suivante : 
+
 `obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 12 --put <chemin_du_fichier>`
 
 _Note : Sur le téléphone portable vous pourrez choisir d'accepter ou de refuser la réception d'un fichier._
 
 ### Envoyer un fichier sur un ordinateur
 
-Pour envoyer un fichier sur un ordinateur, utiliser la même commande mais en changeant le channel : 
+Pour envoyer un fichier sur un ordinateur, utiliser la même commande mais en changeant le channel :
+
 `obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 9 --put <chemin_du_fichier>`
 
 # Guide-piratage-Bluetooth
