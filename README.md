@@ -40,6 +40,13 @@ Puis confirmer le passkey entre les 2 appareils pour la connexion.
 
 Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : `connect XX.XX.XX.XX.XX.XX`
 
+### Envoyer un fichier sur le téléphone portable
+
+Pour envoyer un fichier, utiliser la commande obexftp : 
+`obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 12 --put <chemin_du_fichier>`
+
+
+
 # Guide-piratage-Bluetooth
 
 ## 1. BlueDucky
