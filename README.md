@@ -49,7 +49,7 @@ Pour lancer un scan :
 
 ### Appareillement téléphone portable
 
-Pour s'appareiller avec un téléphone portable mettre le téléphone en mode pairable et une fois celui-ci détecté : 
+Pour s'appareiller avec un téléphone portable mettre le téléphone en mode pairable et une fois l'adresse MAC de celui-ci détecté, la ressaisir à la place des "XX.XX.XX.XX.XX.XX" : 
 
 `pair XX.XX.XX.XX.XX.XX`
 
@@ -72,6 +72,15 @@ _Note : Sur le téléphone portable vous pourrez choisir d'accepter ou de refuse
 Pour envoyer un fichier sur un ordinateur, utiliser la même commande mais en changeant le channel :
 
 `obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 9 --put <chemin_du_fichier>`
+
+`--nopath` va permettre de ...
+`--noconn` va permettre de ...
+`--uuid none` va permettre de ...
+`--bluetooth XX.XX.XX.XX.XX.XX` va permettre de ...
+`--channel` va permettre de ...
+`--put` permet d'envoyer le fichier
+
+Note : Selon le type d'appareil les channels peuvent varier.
 
 # Guide-piratage-Bluetooth
 
