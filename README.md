@@ -1,3 +1,22 @@
+# Tutoriel Bluetooth - Échanger des fichiers via Bluetooth avec `bluetoothctl`, `hcitool` et `obexftp`
+
+Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à des appareils via Bluetooth et échanger des fichiers, en utilisant les outils `bluetoothctl`, `hcitool` et `obexftp`.
+
+## Prérequis
+
+- Un adaptateur Bluetooth sur le PC.
+- Un téléphone Android avec Bluetooth activé.
+- Logiciels nécessaires :
+  - `bluetoothctl` pour gérer les connexions Bluetooth.
+  - `hcitool` pour scanner les appareils Bluetooth.
+  - `obexftp` pour envoyer et recevoir des fichiers via Bluetooth.
+
+Installez les outils nécessaires avec la commande suivante :
+
+```bash
+sudo apt-get install bluez bluez-tools obexftp
+
+
 # Guide-piratage-Bluetooth
 
 ## 1. BlueDucky
@@ -26,6 +45,7 @@ Cet outil va permettre d'afficher directement les contacts de l'appareil ciblé 
 Il va également permettre d'afficher les informations sur l'appareil ciblé.
 
 Lien Github Bluebugger : https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/webdragon63/Bluebugger&ved=2ahUKEwi99LnSy8CRAxUkK_sDHSrsG1IQFnoECA0QAQ&usg=AOvVaw12qGAG9L2QzrwEg0vpzhbf
+
 
 ## 3. mapAccountHijack
 
