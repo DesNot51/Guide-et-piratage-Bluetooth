@@ -4,9 +4,9 @@ Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à 
 
 ## Prérequis
 
-- Un adaptateur Bluetooth sur le PC.
+- Un adaptateur Bluetooth sur le PC + Debian 13
 - Un téléphone Android avec Bluetooth activé.
-- Logiciels nécessaires :
+- Paquets nécessaires :
   - `bluetoothctl` pour gérer les connexions Bluetooth.
   - `hcitool` pour scanner les appareils Bluetooth.
   - `obexftp` pour envoyer et recevoir des fichiers via Bluetooth.
