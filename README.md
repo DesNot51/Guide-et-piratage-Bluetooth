@@ -38,8 +38,7 @@ Pour lancer un scan : `scan on`
 Pour s'appareiller avec un téléphone portable mettre le téléphone en mode pairable et une fois celui-ci détecté : `pair XX.XX.XX.XX.XX.XX`
 Puis confirmer le passkey entre les 2 appareils pour la connexion.
 
-
-
+Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : `connect XX.XX.XX.XX.XX.XX`
 
 # Guide-piratage-Bluetooth
 
