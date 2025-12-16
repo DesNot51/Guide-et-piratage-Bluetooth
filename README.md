@@ -50,7 +50,7 @@ Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : 
 
 ### Envoyer un fichier sur le téléphone portable
 
-Pour envoyer un fichier, utiliser la commande obexftp : 
+Pour envoyer un fichier sur un téléphone portable, utiliser la commande obexftp suivante : 
 `obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 12 --put <chemin_du_fichier>`
 
 ### Envoyer un fichier sur un ordinateur
