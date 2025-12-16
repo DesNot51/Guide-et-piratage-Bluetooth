@@ -70,9 +70,7 @@ Elle permet à un attaquant non authentifié, en proximité Bluetooth, d'envoyer
 
 Cet outil fonctionne grâce à un simple script Python exécutable sous linux et/ou Raspberry Pi
 
-[EXPLIQUER DAVANTAGE LE FONCTIONNEMENT]
-
-Lien Github BlueDucky : https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/pentestfunctions/BlueDucky&ved=2ahUKEwj_-fOkycCRAxW_RKQEHY7RMXAQFnoECCAQAQ&usg=AOvVaw0ofba09WYb8Ah1-BWZAqog
+Lien Github BlueDucky : https://github.com/pentestfunctions/BlueDucky/blob/main/utils/menu_functions.py
 
 Note : Des mises à jours seront à effectuer sur le code Python :
 
@@ -87,7 +85,7 @@ Celui-ci demande d'être déjà appairé avec l'appareil (peut être possible en
 Cet outil va permettre d'afficher directement les contacts de l'appareil ciblé contenant les noms et les numéros de téléphones. 
 Il va également permettre d'afficher les informations sur l'appareil ciblé.
 
-Lien Github Bluebugger : https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/webdragon63/Bluebugger&ved=2ahUKEwi99LnSy8CRAxUkK_sDHSrsG1IQFnoECA0QAQ&usg=AOvVaw12qGAG9L2QzrwEg0vpzhbf
+Lien Github Bluebugger : https://github.com/webdragon63/Bluebugger
 
 
 ## 3. mapAccountHijack
@@ -95,4 +93,4 @@ Lien Github Bluebugger : https://www.google.com/url?sa=t&source=web&rct=j&opi=89
 Celui-ci demande aussi d'être déjà appairé avec l'appareil (peut être possible en utilisant l'outil précédent)
 Cet outil va permettre d'envoyer directement des messages à la place de la cible à n'importe quel numéro directement sur le téléphone de la cible. Le message est de plus éditable.
 
-Lien Github Outil 3 : https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/sgxgsx/mapAccountHijack&ved=2ahUKEwiEluST8sGRAxWPZzABHTz0GCMQFnoECCgQAQ&usg=AOvVaw3JsvBN34ok6iymCIeYcX_V
+Lien Github Outil 3 : https://github.com/sgxgsx/mapAccountHijack
