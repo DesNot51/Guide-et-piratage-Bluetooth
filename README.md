@@ -1,4 +1,4 @@
-# Tutoriel Bluetooth - Échanger des fichiers via Bluetooth avec `bluetoothctl`, `hcitool` et `obexftp`
+# Tutoriel Bluetooth - Échanger des fichiers via Bluetooth avec `bluetoothctl`, `hcitool` et `obexftp` + hacking
 
 Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à des appareils via Bluetooth et échanger des fichiers, en utilisant les outils `bluetoothctl`, `hcitool` et `obexftp`.
 
