@@ -88,6 +88,7 @@ Lien Github BlueDucky : https://github.com/pentestfunctions/BlueDucky/blob/main/
 Note : Des mises à jours seront à effectuer sur le code Python :
 
 Ligne 107 dans la fonction **BlueDucky.py** : ssp_command = ["sudo", "hciconfig", self.iface, "sspmode"]
+
 Ligne 46 dans la fonction **menu_functions.py** : time.sleep(5)
 
 ## 2. Bluebugger
