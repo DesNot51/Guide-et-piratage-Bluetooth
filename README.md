@@ -13,9 +13,9 @@ Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à 
 
 ## 1. Outil hcitool
 
-**Vous devez activer le bluetooth sur votre ordinateur pour commencer et activer l'appairage sur le téléphone pour le repérer**
+**Vous devez activer le bluetooth sur votre ordinateur pour commencer et activer l'appairage sur le téléphone pour le repérer.**
 
-Pour scanner le Bluetooth saisir dans un terminal :
+Pour scanner le Bluetooth, saisir dans un terminal la commande suivante :
 
 `hcitool scan`
 [INSERER CAPTURE]
@@ -25,10 +25,10 @@ Cette commande va permettre de repérer tous les appareils bluetooth à proximit
 ## 2. Outil bluetoothctl 
 ### Commandes de bases
 
-Pour ouvrir Bluetoothctl saisissez la commande suivante dans le terminal : 
+Pour ouvrir Bluetoothctl, saisir la commande suivante dans le terminal : 
 `bluetoothctl`
 
-Pour activer l'agent bluetooth saisissez la commande : 
+Pour activer l'agent bluetooth, saisir la commande : 
 
 `agent-on`
 
@@ -50,11 +50,11 @@ Pour lancer un scan :
 
 ### Appareillement téléphone portable
 
-Pour s'appareiller avec un téléphone portable mettre le téléphone en mode pairable et une fois l'adresse MAC de celui-ci détecté, la ressaisir à la place des "XX.XX.XX.XX.XX.XX" : 
+Pour s'appareiller avec un téléphone portable, mettre le téléphone en mode "pairable" et une fois l'adresse MAC de celui-ci détectée, la ressaisir à la place des "XX.XX.XX.XX.XX.XX" : 
 
 `pair XX.XX.XX.XX.XX.XX`
 
-Puis confirmer le passkey entre les 2 appareils pour la connexion.
+Puis, confirmer le passkey entre les 2 appareils pour la connexion en saisissant "yes" dans le terminal bluetoothctl.
 
 Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : 
 
@@ -81,7 +81,7 @@ Pour envoyer un fichier sur un ordinateur, utiliser la même commande mais en ch
 `--channel` va permettre de ...
 `--put` permet d'envoyer le fichier
 
-Note : Selon le type d'appareil les channels peuvent varier.
+_Note : Selon le type d'appareil les channels peuvent varier._
 
 # Guide-piratage-Bluetooth
 
