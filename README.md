@@ -180,10 +180,7 @@ Exécution du fichier d'installation :
 
 Redémarrage des services :
 
-`sudo service bluetooth stop
-sudo systemctl daemon-reload
-sudo service bluetooth start
-sudo hciconfig -a hci0 reset`
+`sudo service bluetooth stop\nsudo systemctl daemon-reload\nsudo service bluetooth start\nsudo hciconfig -a hci0 reset`
 
 
 
