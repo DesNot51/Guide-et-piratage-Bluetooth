@@ -122,4 +122,68 @@ Lien Github Bluebugger : https://github.com/webdragon63/Bluebugger
 Celui-ci demande aussi d'être déjà appairé avec l'appareil (peut être possible en utilisant l'outil précédent)
 Cet outil va permettre d'envoyer directement des messages à la place de la cible à n'importe quel numéro directement sur le téléphone de la cible. Le message est de plus éditable.
 
-Lien Github Outil 3 : https://github.com/sgxgsx/mapAccountHijack
+Lien Github utilisé mapAccountHijack : https://github.com/sgxgsx/mapAccountHijack
+
+###(Facultatif) Prérequis pour utiliser cet outil : **Python 3.10.10**
+
+### Installation Python 3.10.10 (facultatif)
+
+Récupération du fichier .tgz sur le site officiel de Python :
+
+`wget https://www.python.org/ftp/python/3.10.10/Python-3.10.10.tgz`
+
+Extraction du fichier : 
+
+`tar -xvf Python-3.10.10.tgz`
+
+Se diriger dans le répertoire extrait : 
+
+`cd Python-3.10.10`
+
+`./configure --enable-optimizations`
+
+`make`
+
+`sudo make altinstall`
+
+`python3.10 -m ensurepip --upgrade`
+
+### Installation de l'outil (Python 3.10)
+
+Téléchargement du github utilisé :
+
+`git clone https://github.com/sgxgsx/mapAccountHijack.git`
+
+Se diriger dans le répertoire du git téléchargé précédemment : 
+
+`cd mapAccountHijack`
+
+Créer un environnement virtuel : 
+
+`python3.10 -m venv .venv`
+
+Accéder à l'environnement virtuel : 
+
+`source .venv/bin/activate`
+
+Éditer le fichier d'installation **install.sh** pour le mettre en **Python3.10**
+
+Ajouter le droit d'exécution au fichier pour tous les utilisateurs : 
+
+`chmod +x install.sh`
+
+Exécution du fichier d'installation : 
+
+`sudo ./install.sh`
+
+[INSTRUCTIONS A VOIR SUR LE GITHUB]
+
+Redémarrage des services :
+
+`sudo service bluetooth stop
+sudo systemctl daemon-reload
+sudo service bluetooth start
+sudo hciconfig -a hci0 reset`
+
+
+
