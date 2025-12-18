@@ -129,6 +129,7 @@ Cet outil va permettre d'envoyer directement des messages à la place de la cibl
 Lien Github utilisé mapAccountHijack : https://github.com/sgxgsx/mapAccountHijack
 
 ### (Facultatif) Prérequis pour utiliser cet outil : **Python 3.10.10**
+Python 3 peut aussi suffir pour cet outil
 
 ### Installation Python 3.10.10 (facultatif)
 
