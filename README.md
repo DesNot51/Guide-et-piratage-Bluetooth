@@ -16,8 +16,9 @@ Ce tutoriel explique **toutes les commandes nécessaires** pour se connecter à 
 **Vous devez activer le bluetooth sur votre ordinateur pour commencer et activer l'appairage sur le téléphone pour le repérer.**
 
 Pour scanner le Bluetooth, saisir dans un terminal la commande suivante :
-
-`hcitool scan`
+```
+hcitool scan
+```
 [INSERER CAPTURE]
 
 Cette commande va permettre de repérer tous les appareils bluetooth à proximité.
@@ -26,54 +27,57 @@ Cette commande va permettre de repérer tous les appareils bluetooth à proximit
 ### Commandes de bases
 
 Pour ouvrir Bluetoothctl, saisir la commande suivante dans le terminal : 
-`bluetoothctl`
-
+```
+bluetoothctl
+```
 Pour activer l'agent bluetooth, saisir la commande : 
-
-`agent-on`
-
+```
+agent-on
+```
 Puis : 
-
-`default-agent`
-
+```
+default-agent
+```
 Pour passer en mode découvrable : 
-
-`discoverable on`
-
+```
+discoverable on
+```
 Pour autoriser l'appreillement : 
-
-`pairable on`
-
+```
+pairable on
+```
 Pour lancer un scan : 
-
-`scan on`
+```
+scan on
+```
 
 ### Appareillement téléphone portable
 
 Pour s'appareiller avec un téléphone portable, mettre le téléphone en mode "pairable" et une fois l'adresse MAC de celui-ci détectée, la ressaisir à la place des "XX.XX.XX.XX.XX.XX" : 
-
-`pair XX.XX.XX.XX.XX.XX`
-
+```
+pair XX.XX.XX.XX.XX.XX
+```
 Puis, confirmer le passkey entre les 2 appareils pour la connexion en saisissant "yes" dans le terminal bluetoothctl.
 
 Une fois l'appareillement effectué, vous pouvez vous connecter à l'appareil : 
-
-`connect XX.XX.XX.XX.XX.XX`
-
+```
+connect XX.XX.XX.XX.XX.XX
+```
 ### Envoyer un fichier sur le téléphone portable
 
 Pour envoyer un fichier sur un téléphone portable, utiliser la commande obexftp suivante : 
-
-`obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 12 --put <chemin_du_fichier>`
-
+```
+obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 12 --put <chemin_du_fichier>
+```
 _Note : Sur le téléphone portable vous pourrez choisir d'accepter ou de refuser la réception d'un fichier._
 
 ### Envoyer un fichier sur un ordinateur
 
 Pour envoyer un fichier sur un ordinateur, utiliser la même commande mais en changeant le channel :
 
-`obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 9 --put <chemin_du_fichier>`
-
+```
+obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 9 --put <chemin_du_fichier>
+```
 `--nopath` va permettre de ...
 
 `--noconn` va permettre de ...
@@ -124,66 +128,89 @@ Cet outil va permettre d'envoyer directement des messages à la place de la cibl
 
 Lien Github utilisé mapAccountHijack : https://github.com/sgxgsx/mapAccountHijack
 
-###(Facultatif) Prérequis pour utiliser cet outil : **Python 3.10.10**
+### (Facultatif) Prérequis pour utiliser cet outil : **Python 3.10.10**
 
 ### Installation Python 3.10.10 (facultatif)
 
 Récupération du fichier .tgz sur le site officiel de Python :
-
-`wget https://www.python.org/ftp/python/3.10.10/Python-3.10.10.tgz`
-
+```
+wget https://www.python.org/ftp/python/3.10.10/Python-3.10.10.tgz
+```
 Extraction du fichier : 
-
-`tar -xvf Python-3.10.10.tgz`
-
+```
+tar -xvf Python-3.10.10.tgz
+```
 Se diriger dans le répertoire extrait : 
-
-`cd Python-3.10.10`
-
-`./configure --enable-optimizations`
-
-`make`
-
-`sudo make altinstall`
-
-`python3.10 -m ensurepip --upgrade`
-
+```
+cd Python-3.10.10
+```
+```
+./configure --enable-optimizations
+```
+```
+make
+```
+```
+sudo make altinstall
+```
+```
+python3.10 -m ensurepip --upgrade
+```
 ### Installation de l'outil (Python 3.10)
 
 Téléchargement du github utilisé :
-
-`git clone https://github.com/sgxgsx/mapAccountHijack.git`
-
+```
+git clone https://github.com/sgxgsx/mapAccountHijack.git
+```
 Se diriger dans le répertoire du git téléchargé précédemment : 
-
-`cd mapAccountHijack`
-
+```
+cd mapAccountHijack
+```
 Créer un environnement virtuel : 
-
-`python3.10 -m venv .venv`
-
+```
+python3.10 -m venv .venv
+```
 Accéder à l'environnement virtuel : 
-
-`source .venv/bin/activate`
-
+```
+source .venv/bin/activate
+```
 Éditer le fichier d'installation **install.sh** pour le mettre en **Python3.10**
 
 Ajouter le droit d'exécution au fichier pour tous les utilisateurs : 
-
-`chmod +x install.sh`
-
+```
+chmod +x install.sh
+```
 Exécution du fichier d'installation : 
-
-`sudo ./install.sh`
-
+```
+sudo ./install.sh
+```
 [INSTRUCTIONS A VOIR SUR LE GITHUB]
 
 Redémarrage des services :
 
-`sudo service bluetooth stop`
-`sudo systemctl daemon-reload`
-`sudo service bluetooth start`
-`sudo hciconfig -a hci0 reset`
+```
+sudo service bluetooth stop
+sudo systemctl daemon-reload
+sudo service bluetooth start
+sudo hciconfig -a hci0 reset
+```
 
+Se diriger dans le répertoire nOBEX pour refaire la direction des répertoires pour Python : 
+```
+cd /nOBEX/nOBEX
+```
+Déplacer tous les fichier dans ce répertoire dans le répertoire précédent : 
+```
+sudo mv * ../
+```
+Installer aiohttp : 
+```
+pip install aiohttp
+```
+Vous avez terminé !
+Pour tester vous pouvez exécuter la commande suivante : 
+```
+python3.10 mapAccountHijack.py --help
+```
 
 
