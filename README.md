@@ -151,15 +151,20 @@ Se diriger dans le répertoire extrait :
 ```
 cd Python-3.10.10
 ```
+Compilation de Python :
 ```
 ./configure --enable-optimizations
 ```
+L'option --enable-optimizations active des réglages pour rendre le programme plus rapide après compilation, mais cela prend plus de temps à compiler.
+Lancement de la compilation du logiciel selon les options définies avec la commande précédente.
 ```
 make
 ```
+Installation du logiciel compilé sans remplacer la version par défaut du système
 ```
 sudo make altinstall
 ```
+
 ```
 python3.10 -m ensurepip --upgrade
 ```
