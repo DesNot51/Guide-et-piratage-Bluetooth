@@ -198,11 +198,15 @@ sudo hciconfig -a hci0 reset
 
 Se diriger dans le répertoire nOBEX pour refaire la direction des répertoires pour Python : 
 ```
-cd /nOBEX/nOBEX
+cd nOBEX/nOBEX
 ```
 Déplacer tous les fichier dans ce répertoire dans le répertoire précédent : 
 ```
 sudo mv * ../
+```
+Revenir ensuite en arrière dans le répertoire principal : 
+```
+cd ../..
 ```
 Installer aiohttp : 
 ```
