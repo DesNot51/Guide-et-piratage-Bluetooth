@@ -220,4 +220,63 @@ Pour tester vous pouvez exécuter la commande suivante :
 python3.10 mapAccountHijack.py --help
 ```
 
+### Installation du github (Python 3)
+
+Téléchargement du github utilisé :
+```
+git clone https://github.com/sgxgsx/mapAccountHijack.git
+```
+Se diriger dans le répertoire du git téléchargé précédemment : 
+```
+cd mapAccountHijack
+```
+Créer un environnement virtuel : 
+```
+python3 -m venv .venv
+```
+Accéder à l'environnement virtuel : 
+```
+source .venv/bin/activate
+```
+Ajouter le droit d'exécution au fichier pour tous les utilisateurs : 
+```
+chmod +x install.sh
+```
+Exécution du fichier d'installation : 
+```
+sudo ./install.sh
+```
+[INSTRUCTIONS A VOIR SUR LE GITHUB]
+
+Redémarrage des services :
+
+```
+sudo service bluetooth stop
+sudo systemctl daemon-reload
+sudo service bluetooth start
+sudo hciconfig -a hci0 reset
+```
+
+Se diriger dans le répertoire nOBEX pour refaire la direction des répertoires pour Python : 
+```
+cd nOBEX/nOBEX
+```
+Déplacer tous les fichier dans ce répertoire dans le répertoire précédent : 
+```
+sudo mv * ../
+```
+Revenir ensuite en arrière dans le répertoire principal : 
+```
+cd ../..
+```
+Installer aiohttp : 
+```
+pip install aiohttp
+```
+Vous avez terminé !
+Pour tester vous pouvez exécuter la commande suivante : 
+```
+python3 mapAccountHijack.py --help
+```
+
 
