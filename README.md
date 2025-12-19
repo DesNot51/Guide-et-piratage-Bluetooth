@@ -19,7 +19,13 @@ Pour scanner le Bluetooth, saisir dans un terminal la commande suivante :
 ```
 hcitool scan
 ```
-[INSERER CAPTURE]
+Le résultat s'affiche comme ceci : 
+```
+Scanning ...
+00:1A:7D:DA:71:01   Smartphone Android
+11:22:33:44:55:66   Casque Bluetooth
+AA:BB:CC:DD:EE:FF   Imprimante sans fil
+```
 
 Cette commande va permettre de repérer tous les appareils bluetooth à proximité.
 
@@ -78,15 +84,15 @@ Pour envoyer un fichier sur un ordinateur, utiliser la même commande mais en ch
 ```
 obexftp --nopath --noconn --uuid none --bluetooth XX.XX.XX.XX.XX.XX --channel 9 --put <chemin_du_fichier>
 ```
-`--nopath` va permettre de ...
+`--nopath` va permettre de ne pas naviguer dans les dossiers du périphérique distant.
 
-`--noconn` va permettre de ...
+`--noconn` va permettre de ne pas transmettre d'en-tête de connexion au périphérique distant.
 
-`--uuid none` va permettre de ...
+`--uuid none` va permettre de ne pas envoyer d’identifiant de service.
 
-`--bluetooth XX.XX.XX.XX.XX.XX` va permettre de ...
+`--bluetooth XX.XX.XX.XX.XX.XX` correspond à l'adresse MAC (bluetooth) du périphérique distant.
 
-`--channel` va permettre de ...
+`--channel` est différent selon les périphériques ciblés (Téléphone, ordinateur, etc...)
 
 `--put` permet d'envoyer le fichier
 
