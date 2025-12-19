@@ -22,9 +22,9 @@ hcitool scan
 Le résultat s'affiche comme ceci : 
 ```
 Scanning ...
-00:1A:7D:DA:71:01   Smartphone Android
-11:22:33:44:55:66   Casque Bluetooth
-AA:BB:CC:DD:EE:FF   Imprimante sans fil
+        00:1A:7D:DA:71:01        Smartphone Android
+        11:22:33:44:55:66        Casque Bluetooth
+        AA:BB:CC:DD:EE:FF        Imprimante sans fil
 ```
 
 Cette commande va permettre de repérer tous les appareils bluetooth à proximité.
