@@ -176,7 +176,9 @@ Accéder à l'environnement virtuel :
 source .venv/bin/activate
 ```
 Éditer le fichier d'installation **install.sh** pour le mettre en **Python3.10**
-
+```
+nano install.sh
+```
 Ajouter le droit d'exécution au fichier pour tous les utilisateurs : 
 ```
 chmod +x install.sh
